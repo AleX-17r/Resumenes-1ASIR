@@ -19,7 +19,9 @@ Recuerda: un **Gibibyte** hace referencia a que es en Binario, un Gabyte será e
 
 El binario se basa en potencias de 2.
 Podemos saber cuál sería el número en decimal a partir de la posición de los números **1**, por ejemplo en la siguiente imagen vemos que tenemos **1**s en la posición de **64** y de **16**, esto significa que nuestro número en decimal será **64+16=80**
+
 ![:P](../images/bin1.png)
+
 Para convertir de decimal a binario, podemos hacer utilizar el mismo método, por ejemplo:
 Si tenemos el 90:
 La forma más rápida será restando en los números de la tabla, si este es mayor a  nuestro número, pondremos un 0 y pasaremos al siguiente, si es menor, se lo restaremos, y pondremos un 1 en su posición.
