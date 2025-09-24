@@ -1,4 +1,4 @@
-[Bin, Hex.md](https://github.com/user-attachments/files/22501005/Bin.Hex.md)## Conversión entre diferentes Unidades
+## Conversión entre diferentes Unidades
 Existen dierentes unidades según la cantidad que queramos medir.
 El dato más pequeño existente es el bit, la información se guarda en bytes (8 bits).
 En casos en los que tenemos grandes volúmenes de información, se utilizan otras unidades, como por ejemplo el KB (1000/1024 Bytes).
