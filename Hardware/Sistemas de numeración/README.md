@@ -3,7 +3,7 @@ Existen dierentes unidades según la cantidad que queramos medir.
 El dato más pequeño existente es el bit, la información se guarda en bytes (8 bits).
 En casos en los que tenemos grandes volúmenes de información, se utilizan otras unidades, como por ejemplo el KB (1000/1024 Bytes).
 
-![:P](images/Screenshot_20250527_081822.png)
+![:P](../images/bin1.png)
 
 Existen 2 Unidades de Medida para estos casos, estos son:
 -  **Binario**: utilizado internamente por ordenadores, cada nivel (KB -> MB) son 1024
