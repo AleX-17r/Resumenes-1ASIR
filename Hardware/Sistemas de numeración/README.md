@@ -47,3 +47,15 @@ De Binario a Hexadecimal, será lo mismo, pasaremos cada 4 bits a Hexadecimal.
 | ------------ | --- | ----- | ---- | ---- |
 |              | =   | 2     | 5    | C16  |
 |              | =   | 25C16 |      |      |
+
+---
+
+---
+### Operaciones en Binario
+Funcionan igual que en Decimal, deberemos fijarnos bien en la posición de cada cifra.
+#### Sumas
+![:P](../images/bin-Sum.png)
+#### Restas
+![:P](../images/bin-Res.png)
+#### Multiplicación
+![:P](../images/bin-Mul.png)
