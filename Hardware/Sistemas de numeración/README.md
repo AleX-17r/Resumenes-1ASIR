@@ -50,7 +50,6 @@ De Binario a Hexadecimal, será lo mismo, pasaremos cada 4 bits a Hexadecimal.
 
 ---
 
----
 ### Operaciones en Binario
 Funcionan igual que en Decimal, deberemos fijarnos bien en la posición de cada cifra.
 #### Sumas
