@@ -27,7 +27,7 @@ La forma más rápida será restando en los números de la tabla, si este es may
 ⚠️Dado que el sistema Binario se basa en potencias de 2, nuestra tabla siempre será de 1, 2, 4 , 8, 16, 32, 64, 128, 256, 512, 1024,...⚠️
 
 El método más matemático, sería multimplicar cada bit por 2 elevado a su posición, por ejemplo:
-![[bin3.png]]
+![:P](../images/bin3.png)
 
 ---
 ## Hexadecimal
