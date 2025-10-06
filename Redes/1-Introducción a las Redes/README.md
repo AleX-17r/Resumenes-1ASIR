@@ -35,7 +35,7 @@ Para que una red sea buena, deberá de cumplir las siguientes características:
 Existen varias formas de diferenciar los tipos de redes. 
 ### Según su tamaño
 - **WAN** (Wide Area Network): Conectan diferentes países (ej. Internet)
-- MAN (Metropolitan): Conectan a nivel de ciudades.
+- **MAN** (Metropolitan): Conectan a nivel de ciudades.
 - **LAN** (Local): Conecta dispositivos en una zona pequeña (ej. oficina)
 - **PAN** (Personal): Conecta un dispositivo personal con otro (muy pequeñas)
 
