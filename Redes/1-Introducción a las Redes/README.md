@@ -88,12 +88,16 @@ En caso de querer convertir una señal a otra, deberemos modularla o codificarla
 Reduce la complejidad 
 Cada capa lleva a cabo una función.
 ### Modelo OSI
+
 ![:P](../images/OSI.png)
+
 Los mensajes Pasan por cada capa hasta llegar al destino, es decir se iniciará desde la Aplicación de un Host, pasará por todas las capas hasta llegar a la física, que lo enviará por el medio físico hasta la capa física
 Es el estándar de transmisión de datos
 ### Modelo TCP/IP
 Funciona igual que el modelo OSI, pero simplificado en 4 capas.
+
 ![:P](../images/TCP.png)
+
 En cada capa añade una cabecera con la que asegurar la correcta transmisión.
 
 ---
