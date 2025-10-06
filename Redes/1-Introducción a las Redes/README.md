@@ -44,7 +44,7 @@ Existen varias formas de diferenciar los tipos de redes.
 - **Lógica**: cómo una red transmite de un nodo a otro.
 Dentro de la **Topología Física**, tenemos diferentes tipos.
 
-![[Topology.png]]
+![:P](../images/Topology.png)
 Las más comunes (actualmente) son:
 - **Estrella**: Todos los dispositivos conectados a un nodo central (generalmente un Router), esta se utiliza en LANs
 - **Malla**: Cada nodo está conectado a más de uno, la información puede pasar por varios para llegar al destino, esta utiliza Internet.
@@ -71,9 +71,10 @@ La información puede pasar por diferentes medios, ya sea **medios guiados** com
 ## Tipo de señales
 Las señales que se transmiten por medios físicos pueden ser **analógicas** y **digitales**.
 En el caso de una **digital**, todos los valores son 0 o 1.
-![[Digital.png]]
+![:P](../images/Digital.png)
 Mientras que en una **analógica**, puede haber valores intermedios (se tomará lo que más cerca esté, o lo que diga un protocolo de corrección).
-![[Analog.png]]
+![:P](../images/Analog.png)
+
 
 En caso de querer convertir una señal a otra, deberemos modularla o codificarla.
 
