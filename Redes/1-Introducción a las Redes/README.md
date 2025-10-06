@@ -71,8 +71,11 @@ La información puede pasar por diferentes medios, ya sea **medios guiados** com
 ## Tipo de señales
 Las señales que se transmiten por medios físicos pueden ser **analógicas** y **digitales**.
 En el caso de una **digital**, todos los valores son 0 o 1.
+
 ![:P](../images/Digital.png)
+
 Mientras que en una **analógica**, puede haber valores intermedios (se tomará lo que más cerca esté, o lo que diga un protocolo de corrección).
+
 ![:P](../images/Analog.png)
 
 
@@ -84,12 +87,12 @@ En caso de querer convertir una señal a otra, deberemos modularla o codificarla
 Reduce la complejidad 
 Cada capa lleva a cabo una función.
 ### Modelo OSI
-![[OSI.png]]
+![:P](../images/OSI.png)
 Los mensajes Pasan por cada capa hasta llegar al destino, es decir se iniciará desde la Aplicación de un Host, pasará por todas las capas hasta llegar a la física, que lo enviará por el medio físico hasta la capa física
 Es el estándar de transmisión de datos
 ### Modelo TCP/IP
 Funciona igual que el modelo OSI, pero simplificado en 4 capas.
-![[TCP.png]]
+![:P](../images/TCP.png)
 En cada capa añade una cabecera con la que asegurar la correcta transmisión.
 
 ---
