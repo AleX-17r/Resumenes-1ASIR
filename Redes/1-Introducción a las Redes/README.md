@@ -45,6 +45,7 @@ Existen varias formas de diferenciar los tipos de redes.
 Dentro de la **Topología Física**, tenemos diferentes tipos.
 
 ![:P](../images/Topology.png)
+
 Las más comunes (actualmente) son:
 - **Estrella**: Todos los dispositivos conectados a un nodo central (generalmente un Router), esta se utiliza en LANs
 - **Malla**: Cada nodo está conectado a más de uno, la información puede pasar por varios para llegar al destino, esta utiliza Internet.
