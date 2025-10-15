@@ -13,4 +13,4 @@ Sun was acquired by Oracle in 2010 for $7.4 billion.
 
 The company's origins trace back to Stanford University, founded by Andy Bechtolsheim, Scott McNealy, and Vinod Khosla, at 1982
 
-![:P](Pasted image 20251015183705.png)
+![:P]("Pasted image 20251015183705.png")
