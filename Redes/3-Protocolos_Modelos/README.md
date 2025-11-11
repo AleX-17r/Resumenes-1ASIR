@@ -63,3 +63,7 @@ Se encargan de que dispositivos de diferentes fabricantes sean compatibles entre
 
 **IANA** e **ICANN**: asignan (venden) nombres y números (IPs y nombres de dominio).
 **IEE**: estandarización de electrónica (Ethernet, WiFi, Bluetooth).
+**EIA**: Cableado eléctrico, conectores y Racks 19"
+
+---
+### Modelo OSI
