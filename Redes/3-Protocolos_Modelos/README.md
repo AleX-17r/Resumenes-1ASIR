@@ -46,3 +46,20 @@ Por ejemplo, en un cliente que se conecta a un servidor web:
 - **TCP**: Controla el flujo y administra las conversaciones, para así asegurar la entrega fiable de la información
 - **IP**: Se encarga de la entrega de mensajes, lo utilizan los routers para el rennvío entre redes.
 - **Ethernet**: Responsable de la centrega de mensajes en la LAN.
+
+---
+### TCP/IP
+TCP/IP combina diferentes protocolos para la transmisión, dependiendo de como sea, utilizara uno u otro en cada capa.
+
+(*"C." se refiere a capa*)
+- **C. de Aplicación**: DNS, DHCP, SMTP, POP3, IMAP, FTP, HTTP.
+- **C. de Transporte**: TCP, UDP.
+- **C. Internet**: IP, NAT, ICMP, OSPF, BGP, EIGRP
+- **C. Acceso a Red**: ARP, Ethernet, WLAN.
+
+---
+### Estándares abiertos
+Se encargan de que dispositivos de diferentes fabricantes sean compatibles entre sí.
+
+**IANA** e **ICANN**: asignan (venden) nombres y números (IPs y nombres de dominio).
+**IEE**: estandarización de electrónica (Ethernet, WiFi, Bluetooth).
