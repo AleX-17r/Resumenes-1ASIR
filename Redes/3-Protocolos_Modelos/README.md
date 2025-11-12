@@ -67,3 +67,24 @@ Se encargan de que dispositivos de diferentes fabricantes sean compatibles entre
 
 ---
 ### Modelo OSI
+El Modelo OSI describe la interacción de cada capa con las anteriores y las siguientes.
+Cuenta con 7 capas:
+- **Aplicación**: Contiene protocolos utilizados para comunicaciones.
+- **Presentación**: Proporciona una representación de los datos
+- **Sesión**: Proporciona servicios a Presentación, administra el intercambio de datos durante la sesión
+- **Transporte**: Define servicios para segmentar, transferir y volver a montar los datos.
+- **Red**: Se encarga de que los paquetes lleguen de un host a otro, aunque no sea conexión directa.
+- **Enlace de Datos**: Describe métodos para intercambiar tramas entre dispositivos a través de un medio.
+- **Física**: Componentes eléctricos.
+### Modelo TCP/IP
+El modelo TCP/IP explica cómo los datos deben ser formateados, direccionados, 
+- **Aplicación**: Representa datos para el usuario.
+- **Transporte**: Se encarga de la comunicación entre distintos dispositivos.
+- **Internet**: Determina el mejor camino en una red.
+- **Acceso a la red**: Controla Hardware.
+### Comparación OSI TCP/IP
+TCP junta las capas de Aplicación, Presentación y Sesión como Aplicación. 
+La capa de red del modelo OSI, en TCP, se llama Internet.
+Enlace de Datos y física, como Acceso a la Red.
+
+---
