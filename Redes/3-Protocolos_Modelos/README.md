@@ -88,3 +88,26 @@ La capa de red del modelo OSI, en TCP, se llama Internet.
 Enlace de Datos y física, como Acceso a la Red.
 
 ---
+### Segmentación del Mensaje
+Para enviar los datos, estos se encapsulan y se dividen en partes más pequeñas y manejables, este es el proceso de **segmentación**.
+**Multiplexación**: cuando se envían varios mensajes al mismo destino
+### Secuenciación
+Permite organizar los paquetes que llegan a un destino, para esto se utiliza un etiquetado.
+### Unidades de Datos de Protocolo
+**Encapsulamiento**: Cuando un mensaje baja por la pila de protocolos para ser enviado.
+**Aplicación**: Datos
+**Transporte**: Segmento
+**Internet**: Paquete
+**Acceso a Red**: Marco
+
+---
+### Direcciones
+La capa de Red y de Enalce, son responsables de enviar datos desde emisor a receptor.
+En las capas
+- **Física**: Bits de temporización y sincronización
+- **Enlace**: DIrecciones Físicas de Destino y origen
+- **Red**: Direcciones lógicas de destino y origen
+- **Transporte**: Número de proceso de destino y de origen
+- **Aplicación**: Datos codificados de Aplicación
+### Dirección Lógica
+Los paquetes contienen la dirección de origen y la de destino.
