@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Estudio HTML - Resumen Completo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .indice {
+            background: #f8f9fa;
+            padding: 30px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .indice h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+        
+        .indice ol {
+            margin-left: 20px;
+        }
+        
+        .indice li {
+            margin: 8px 0;
+            color: #333;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 50px;
+        }
+        
+        .section h2 {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        
+        .section h3 {
+            color: #667eea;
+            margin: 25px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        
+        .section h4 {
+            color: #764ba2;
+            margin: 20px 0 10px 0;
+        }
+        
+        .section p {
+            margin: 15px 0;
+            color: #333;
+        }
+        
+        .section ul, .section ol {
+            margin: 15px 0 15px 30px;
+        }
+        
+        .section li {
+            margin: 8px 0;
+            color: #555;
+        }
+        
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            color: #e83e8c;
+            font-family: 'Courier New', monospace;
+        }
+        
+        pre {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+        
+        pre code {
+            background: transparent;
+            color: #f8f8f2;
+            padding: 0;
+        }
+        
+        .example-box {
+            background: #e7f3ff;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        .warning-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        .important-box {
+            background: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        .tip-box {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        table th {
+            background: #667eea;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        
+        table tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        .footer {
+            background: #2d2d2d;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #667eea;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: all 0.3s;
+        }
+        
+        .back-to-top:hover {
+            background: #764ba2;
+            transform: translateY(-3px);
+        }
+        .cats-and-stars {
+        background-image: url("star-transparent.gif"),
+        url("cat-front.png");
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 GUÍA DE ESTUDIO HTML</h1>
+            <p>Resumen Completo de HTML y CSS Básico</p>
+        </div>
+        
+        <div class="indice">
+            <h2>📋 ÍNDICE DE CONTENIDOS</h2>
+            <ol>
+                <li><a href="#seccion1">Elementos de Frase y Fuente</a></li>
+                <li><a href="#seccion2">Estructura Básica HTML</a></li>
+                <li><a href="#seccion3">Formateo de Texto</a></li>
+                <li><a href="#seccion4">Imágenes</a></li>
+                <li><a href="#seccion5">Listas (Ordenadas, No Ordenadas y de Definición)</a></li>
+                <li><a href="#seccion6">Tablas</a></li>
+                <li><a href="#seccion7">Enlaces (Hipervínculos)</a></li>
+                <li><a href="#seccion8">Iframes</a></li>
+                <li><a href="#seccion9">Elementos Div y Maquetación</a></li>
+                <li><a href="#seccion10">JavaScript Básico (Eventos)</a></li>
+                <li><a href="#seccion11">CSS Inline y Estilos Básicos</a></li>
+                <li><a href="#consejos">Consejos para el Examen</a></li>
+            </ol>
+        </div>
+        
+        <div class="content">
+            <!-- SECCIÓN 1 -->
+            <div class="section" id="seccion1">
+                <h2>1. ELEMENTOS DE FRASE Y FUENTE</h2>
+                
+                <h3>Elementos de Frase (Añaden información estructural)</h3>
+                <ul>
+                    <li><code>&lt;em&gt;</code> - Énfasis (normalmente en cursiva)</li>
+                    <li><code>&lt;strong&gt;</code> - Énfasis mayor (normalmente en negrita)</li>
+                    <li><code>&lt;cite&gt;</code> - Para citar títulos de obras</li>
+                    <li><code>&lt;dfn&gt;</code> - Para definiciones de términos</li>
+                    <li><code>&lt;var&gt;</code> - Para variables en programación</li>
+                    <li><code>&lt;kbd&gt;</code> - Para texto introducido por el usuario (teclado)</li>
+                </ul>
+                
+                <h3>Elementos de Estilo de Fuente</h3>
+                <ul>
+                    <li><code>&lt;tt&gt;</code> - Teletipo (monoespaciado)</li>
+                    <li><code>&lt;i&gt;</code> - Cursiva/Itálica</li>
+                    <li><code>&lt;b&gt;</code> - Negrita</li>
+                    <li><code>&lt;big&gt;</code> - Fuente grande</li>
+                    <li><code>&lt;small&gt;</code> - Fuente pequeña</li>
+                    <li><code>&lt;s&gt;</code> y <code>&lt;strike&gt;</code> - Tachado</li>
+                    <li><code>&lt;u&gt;</code> - Subrayado</li>
+                    <li><code>&lt;blink&gt;</code> - Parpadeante (solo Netscape/Mozilla)</li>
+                </ul>
+                
+                <h3>Mostrar Etiquetas HTML como Texto</h3>
+                <div class="example-box">
+                    <p>Para mostrar etiquetas como texto:</p>
+                    <ul>
+                        <li>Usar <code>&amp;lt;</code> para <code>&lt;</code></li>
+                        <li>Usar <code>&amp;gt;</code> para <code>&gt;</code></li>
+                    </ul>
+                    <p><strong>Ejemplo:</strong> <code>&amp;lt;strong&amp;gt;</code> muestra <code>&lt;strong&gt;</code></p>
+                </div>
+            </div>
+            
+            <!-- SECCIÓN 2 -->
+            <div class="section" id="seccion2">
+                <h2>2. ESTRUCTURA BÁSICA HTML</h2>
+                
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Título de la página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Contenido aquí --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+                <h3>Elementos Importantes</h3>
+                <table>
+                    <tr>
+                        <th>Elemento</th>
+                        <th>Descripción</th>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;!DOCTYPE html&gt;</code></td>
+                        <td>Declaración del tipo de documento</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;html lang="es"&gt;</code></td>
+                        <td>Elemento raíz, especifica el idioma</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;head&gt;</code></td>
+                        <td>Información sobre el documento (metadatos)</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;meta charset="UTF-8"&gt;</code></td>
+                        <td>Codificación de caracteres</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;title&gt;</code></td>
+                        <td>Título que aparece en la pestaña del navegador</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;body&gt;</code></td>
+                        <td>Contenido visible de la página</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <!-- SECCIÓN 3 -->
+            <div class="section" id="seccion3">
+                <h2>3. FORMATEO DE TEXTO</h2>
+                
+                <h3>Encabezados</h3>
+                <ul>
+                    <li><code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code> - Del más importante al menos importante</li>
+                    <li><code>&lt;h1&gt;</code> es el título principal, solo uno por página</li>
+                </ul>
+                
+                <h3>Párrafos y Saltos</h3>
+                <ul>
+                    <li><code>&lt;p&gt;</code> - Párrafo</li>
+                    <li><code>&lt;br&gt;</code> - Salto de línea (sin etiqueta de cierre)</li>
+                    <li><code>&lt;hr&gt;</code> - Línea horizontal separadora</li>
+                </ul>
+                
+                <h4>Atributos del HR</h4>
+<pre><code>&lt;hr color="gray" size="7" width="100%"&gt;
+&lt;hr color="#e040a7" size="8" width="70%"&gt;</code></pre>
+
+                <h3>Bloques de Texto</h3>
+                <ul>
+                    <li><code>&lt;div&gt;</code> - División o sección (bloque)</li>
+                    <li><code>&lt;blockquote&gt;</code> - Cita en bloque (con sangría)</li>
+                    <li><code>&lt;pre&gt;</code> - Texto preformateado (respeta espacios y saltos)</li>
+                </ul>
+            </div>
+            
+            <!-- SECCIÓN 4 -->
+            <div class="section" id="seccion4">
+                <h2>4. IMÁGENES</h2>
+                
+                <h3>Sintaxis Básica</h3>
+<pre><code>&lt;img src="ruta/imagen.jpg" alt="Descripción" width="300" height="200"&gt;</code></pre>
+
+                <h3>Atributos Importantes</h3>
+                <table>
+                    <tr>
+                        <th>Atributo</th>
+                        <th>Descripción</th>
+                        <th>Obligatorio</th>
+                    </tr>
+                    <tr>
+                        <td><code>src</code></td>
+                        <td>Ruta de la imagen</td>
+                        <td>✅ Sí</td>
+                    </tr>
+                    <tr>
+                        <td><code>alt</code></td>
+                        <td>Texto alternativo (accesibilidad)</td>
+                        <td>✅ Sí</td>
+                    </tr>
+                    <tr>
+                        <td><code>width</code> y <code>height</code></td>
+                        <td>Dimensiones en píxeles</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td><code>title</code></td>
+                        <td>Texto al pasar el ratón</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td><code>border</code></td>
+                        <td>Borde de la imagen (0 para sin borde)</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td><code>align</code></td>
+                        <td>Alineación (left, right, center)</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td><code>hspace</code> y <code>vspace</code></td>
+                        <td>Espacio horizontal y vertical alrededor</td>
+                        <td>No</td>
+                    </tr>
+                </table>
+                
+                <h3>Ejemplo con Espaciado</h3>
+<pre><code>&lt;img src="cocina1.jpg" alt="¡A la mesa!" 
+     width="351" height="72" 
+     align="right" 
+     hspace="20" vspace="20" 
+     style="border: 0;"&gt;</code></pre>
+            </div>
+            
+            <!-- SECCIÓN 5 -->
+            <div class="section" id="seccion5">
+                <h2>5. LISTAS</h2>
+                
+                <h3>Listas Ordenadas (Numeradas)</h3>
+<pre><code>&lt;ol type="A"&gt;
+    &lt;li&gt;Primer elemento&lt;/li&gt;
+    &lt;li&gt;Segundo elemento&lt;/li&gt;
+    &lt;li&gt;Tercer elemento&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+                <h4>Tipos de numeración:</h4>
+                <ul>
+                    <li><code>type="1"</code> - Números (predeterminado)</li>
+                    <li><code>type="A"</code> - Letras mayúsculas</li>
+                    <li><code>type="a"</code> - Letras minúsculas</li>
+                    <li><code>type="I"</code> - Números romanos mayúsculas</li>
+                    <li><code>type="i"</code> - Números romanos minúsculas</li>
+                </ul>
+                
+                <h3>Listas No Ordenadas (Viñetas)</h3>
+<pre><code>&lt;ul type="circle"&gt;
+    &lt;li&gt;Elemento&lt;/li&gt;
+    &lt;li&gt;Elemento&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+                <h4>Tipos de viñetas:</h4>
+                <ul>
+                    <li><code>type="disc"</code> - Círculo relleno (predeterminado)</li>
+                    <li><code>type="circle"</code> - Círculo vacío</li>
+                    <li><code>type="square"</code> - Cuadrado</li>
+                </ul>
+                
+                <h3>Listas de Definición</h3>
+<pre><code>&lt;dl&gt;
+    &lt;dt&gt;&lt;b&gt;TÉRMINO:&lt;/b&gt;&lt;/dt&gt;
+    &lt;dd&gt;Definición del término&lt;/dd&gt;
+    
+    &lt;dt&gt;&lt;b&gt;OTRO TÉRMINO:&lt;/b&gt;&lt;/dt&gt;
+    &lt;dd&gt;Otra definición&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+
+                <div class="tip-box">
+                    <ul>
+                        <li><code>&lt;dl&gt;</code> - Lista de definición (Definition List)</li>
+                        <li><code>&lt;dt&gt;</code> - Término a definir (Definition Term)</li>
+                        <li><code>&lt;dd&gt;</code> - Definición del término (Definition Description)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- SECCIÓN 6 -->
+            <div class="section" id="seccion6">
+                <h2>6. TABLAS</h2>
+                
+                <h3>Estructura Básica</h3>
+<pre><code>&lt;table border="1"&gt;
+    &lt;caption&gt;Título de la tabla&lt;/caption&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Encabezado 1&lt;/th&gt;
+            &lt;th&gt;Encabezado 2&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Celda 1&lt;/td&gt;
+            &lt;td&gt;Celda 2&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+
+                <h3>Elementos de Tabla</h3>
+                <table>
+                    <tr>
+                        <th>Elemento</th>
+                        <th>Descripción</th>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;table&gt;</code></td>
+                        <td>Contenedor de la tabla</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;caption&gt;</code></td>
+                        <td>Título de la tabla</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;thead&gt;</code></td>
+                        <td>Cabecera de la tabla</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;tbody&gt;</code></td>
+                        <td>Cuerpo de la tabla</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;tr&gt;</code></td>
+                        <td>Fila (Table Row)</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;th&gt;</code></td>
+                        <td>Celda de encabezado (Table Header)</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;td&gt;</code></td>
+                        <td>Celda de datos (Table Data)</td>
+                    </tr>
+                </table>
+                
+                <h3>Atributos Importantes</h3>
+                <ul>
+                    <li><code>border</code> - Grosor del borde</li>
+                    <li><code>cellpadding</code> - Espacio interno de las celdas</li>
+                    <li><code>cellspacing</code> - Espacio entre celdas</li>
+                    <li><code>width</code> - Ancho de la tabla</li>
+                    <li><code>align</code> - Alineación de la tabla</li>
+                </ul>
+                
+                <h3>Fusión de Celdas</h3>
+<pre><code>&lt;td colspan="3"&gt;Fusiona 3 columnas&lt;/td&gt;
+&lt;td rowspan="2"&gt;Fusiona 2 filas&lt;/td&gt;</code></pre>
+
+                <div class="important-box">
+                    <p><strong>¡Muy importante para exámenes!</strong></p>
+                    <ul>
+                        <li><code>colspan</code> - Fusiona columnas <strong>horizontalmente</strong></li>
+                        <li><code>rowspan</code> - Fusiona filas <strong>verticalmente</strong></li>
+                    </ul>
+                </div>
+                
+                <h3>Caption Align</h3>
+<pre><code>&lt;caption align="top"&gt;Título arriba&lt;/caption&gt;
+&lt;caption align="bottom"&gt;Título abajo&lt;/caption&gt;</code></pre>
+            </div>
+            
+            <!-- SECCIÓN 7 -->
+            <div class="section" id="seccion7">
+                <h2>7. ENLACES (HIPERVÍNCULOS)</h2>
+                
+                <h3>Enlace Básico</h3>
+<pre><code>&lt;a href="destino.html"&gt;Texto del enlace&lt;/a&gt;</code></pre>
+
+                <h3>Tipos de Enlaces</h3>
+<pre><code>&lt;!-- Enlace a otra página del sitio --&gt;
+&lt;a href="pagina.html"&gt;Enlace interno&lt;/a&gt;
+
+&lt;!-- Enlace a un sitio externo --&gt;
+&lt;a href="https://www.ejemplo.com"&gt;Enlace externo&lt;/a&gt;
+
+&lt;!-- Enlace de email --&gt;
+&lt;a href="mailto:email@ejemplo.com"&gt;Enviar email&lt;/a&gt;
+
+&lt;!-- Enlace que abre en nueva pestaña --&gt;
+&lt;a href="pagina.html" target="_blank"&gt;Abrir en nueva pestaña&lt;/a&gt;
+
+&lt;!-- Enlace a un iframe específico --&gt;
+&lt;a href="pagina.html" target="nombreMarco"&gt;Cargar en iframe&lt;/a&gt;</code></pre>
+
+                <h3>Atributo Target</h3>
+                <table>
+                    <tr>
+                        <th>Valor</th>
+                        <th>Descripción</th>
+                    </tr>
+                    <tr>
+                        <td><code>_blank</code></td>
+                        <td>Abre en nueva ventana/pestaña</td>
+                    </tr>
+                    <tr>
+                        <td><code>_self</code></td>
+                        <td>Abre en la misma ventana (predeterminado)</td>
+                    </tr>
+                    <tr>
+                        <td><code>_parent</code></td>
+                        <td>Abre en el marco padre</td>
+                    </tr>
+                    <tr>
+                        <td><code>_top</code></td>
+                        <td>Abre en la ventana completa</td>
+                    </tr>
+                    <tr>
+                        <td><code>nombreMarco</code></td>
+                        <td>Abre en el iframe con ese nombre</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <!-- SECCIÓN 8 -->
+            <div class="section" id="seccion8">
+                <h2>8. IFRAMES</h2>
+                
+                <h3>Sintaxis Básica</h3>
+<pre><code>&lt;iframe src="pagina.html" name="marco" width="600" height="400"&gt;&lt;/iframe&gt;</code></pre>
+
+                <h3>Uso con Enlaces</h3>
+<pre><code>&lt;!-- Menú lateral con iframe --&gt;
+&lt;a href="pagina1.html" target="marco"&gt;Página 1&lt;/a&gt;
+&lt;a href="pagina2.html" target="marco"&gt;Página 2&lt;/a&gt;
+
+&lt;iframe src="inicio.html" name="marco" width="100%" height="400"&gt;&lt;/iframe&gt;</code></pre>
+
+                <h3>Atributos</h3>
+                <ul>
+                    <li><code>src</code> - URL de la página a mostrar</li>
+                    <li><code>name</code> - Nombre del iframe (para target)</li>
+                    <li><code>width</code> y <code>height</code> - Dimensiones</li>
+                    <li><code>frameborder</code> - Borde del iframe (0 o 1)</li>
+                </ul>
+            </div>
+            
+            <!-- SECCIÓN 9 -->
+            <div class="section" id="seccion9">
+                <h2>9. ELEMENTOS DIV Y MAQUETACIÓN</h2>
+                
+                <h3>Div Básico</h3>
+<pre><code>&lt;div style="background-color: #CCCCFF; padding: 15px;"&gt;
+    Contenido del div
+&lt;/div&gt;</code></pre>
+
+                <h3>Layout con Divs (Flexbox)</h3>
+<pre><code>&lt;div class="contenedor"&gt;
+    &lt;div class="cabecera"&gt;Cabecera&lt;/div&gt;
+    
+    &lt;div class="contenido"&gt;
+        &lt;div class="lateral"&gt;Barra lateral&lt;/div&gt;
+        &lt;div class="principal"&gt;Contenido principal&lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class="pie"&gt;Pie de página&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+                <h3>CSS para Layout Flexbox</h3>
+<pre><code>.contenido {
+    display: flex;
+}
+
+.lateral {
+    width: 270px;
+}
+
+.principal {
+    flex: 1;
+}</code></pre>
+
+                <h3>Usos del Div</h3>
+                <ul>
+                    <li>Agrupar contenido relacionado</li>
+                    <li>Aplicar estilos a secciones</li>
+                    <li>Crear layouts y estructuras de página</li>
+                    <li>Organizar el contenido visualmente</li>
+                </ul>
+                
+                <h3>Float (Posicionamiento)</h3>
+<pre><code>&lt;div style="float: left; width: 80%;"&gt;
+    Contenido a la izquierda
+&lt;/div&gt;
+&lt;div style="float: right; width: 20%;"&gt;
+    Contenido a la derecha
+&lt;/div&gt;</code></pre>
+            </div>
+            
+            <!-- SECCIÓN 10 -->
+            <div class="section" id="seccion10">
+                <h2>10. JAVASCRIPT BÁSICO (EVENTOS)</h2>
+                
+                <h3>Eventos de Ratón en Imágenes</h3>
+<pre><code>&lt;img src="imagen.jpg" 
+     onmouseover="this.src='imagen-hover.jpg'"
+     onmouseout="this.src='imagen.jpg'"&gt;</code></pre>
+
+                <h3>Eventos Comunes</h3>
+                <table>
+                    <tr>
+                        <th>Evento</th>
+                        <th>Descripción</th>
+                    </tr>
+                    <tr>
+                        <td><code>onmouseover</code></td>
+                        <td>Cuando el ratón pasa sobre el elemento</td>
+                    </tr>
+                    <tr>
+                        <td><code>onmouseout</code></td>
+                        <td>Cuando el ratón sale del elemento</td>
+                    </tr>
+                    <tr>
+                        <td><code>onclick</code></td>
+                        <td>Cuando se hace clic en el elemento</td>
+                    </tr>
+                    <tr>
+                        <td><code>onload</code></td>
+                        <td>Cuando la página/imagen termina de cargar</td>
+                    </tr>
+                </table>
+                
+                <h3>Cambio de Imágenes al Pasar el Ratón</h3>
+<pre><code>&lt;img id="img1" 
+     width="300" height="200" 
+     src="imagenes/imagen1.jpg" 
+     onmouseover="this.src='imagenes/imagen1-hover.jpg'"
+     onmouseout="this.src='imagenes/imagen1.jpg'"&gt;</code></pre>
+            </div>
+            
+            <!-- SECCIÓN 11 -->
+            <div class="section" id="seccion11">
+                <h2>11. CSS INLINE Y ESTILOS BÁSICOS</h2>
+                
+                <h3>CSS Inline (en el atributo style)</h3>
+<pre><code>&lt;p style="color: blue; font-size: 14px; text-align: center;"&gt;Texto&lt;/p&gt;</code></pre>
+
+                <h3>Propiedades CSS Comunes</h3>
+                
+                <h4>Colores y Fondos</h4>
+<pre><code>color: #003366;              /* Color del texto */
+background-color: #CCCCFF;   /* Color de fondo */
+background: #6bb3ec;         /* Color de fondo (forma corta) */</code></pre>
+
+                <h4>Texto</h4>
+<pre><code>font-family: Arial, sans-serif;  /* Tipo de letra */
+font-size: 14px;                 /* Tamaño de letra */
+font-weight: bold;               /* Grosor (bold, normal) */
+font-style: italic;              /* Estilo (italic, normal) */
+text-align: center;              /* Alineación (left, center, right, justify) */
+text-decoration: underline;      /* Decoración (underline, none) */
+line-height: 1.6;                /* Altura de línea */</code></pre>
+
+                <h4>Espaciado</h4>
+<pre><code>margin: 20px;                    /* Margen exterior */
+margin-left: 325px;              /* Margen izquierdo */
+margin-right: 325px;             /* Margen derecho */
+padding: 15px;                   /* Relleno interior */
+padding-top: 20px;               /* Relleno superior */</code></pre>
+
+                <div class="tip-box">
+                    <p><strong>Diferencia entre margin y padding:</strong></p>
+                    <ul>
+                        <li><code>margin</code> - Espacio <strong>exterior</strong> alrededor del elemento</li>
+                        <li><code>padding</code> - Espacio <strong>interior</strong> dentro del elemento</li>
+                    </ul>
+                </div>
+
+                <h4>Dimensiones</h4>
+<pre><code>width: 100%;                     /* Ancho */
+max-width: 800px;                /* Ancho máximo */
+height: 300px;                   /* Alto */</code></pre>
+
+                <h4>Bordes</h4>
+<pre><code>border: 1px solid black;         /* Borde completo */
+border-left: 8px solid #e8b4b8;  /* Borde izquierdo */
+border-top: 4px solid #d946a6;   /* Borde superior */
+border-collapse: collapse;       /* Para tablas */
+border-radius: 8px;              /* Bordes redondeados */</code></pre>
+
+                <h4>Display y Posicionamiento</h4>
+<pre><code>display: flex;                   /* Layout flexible */
+display: block;                  /* Elemento de bloque */
+display: inline;                 /* Elemento en línea */
+float: left;                     /* Flotante a la izquierda */
+float: right;                    /* Flotante a la derecha */</code></pre>
+
+                <h4>Flexbox (Diseño Flexible)</h4>
+<pre><code>display: flex;                   /* Activa flexbox */
+justify-content: space-between;  /* Distribución horizontal */
+align-items: center;             /* Alineación vertical */
+flex: 1;                         /* Elemento flexible */</code></pre>
+
+                <h3>CSS en la Cabecera</h3>
+<pre><code>&lt;head&gt;
+    &lt;style&gt;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3cbcb;
+        }
+        
+        .titulo {
+            color: #00008B;
+            font-size: 16px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;</code></pre>
+
+                <h3>Selectores CSS</h3>
+<pre><code>/* Por etiqueta */
+p { color: blue; }
+
+/* Por clase */
+.titulo { font-size: 20px; }
+
+/* Por ID */
+#principal { width: 100%; }
+
+/* Múltiples selectores */
+h1, h2, h3 { color: red; }
+
+/* Pseudo-clases */
+a:hover { color: purple; }</code></pre>
+
+                <h3>Box-Sizing</h3>
+<pre><code>box-sizing: border-box;</code></pre>
+                <div class="example-box">
+                    <p>El <code>box-sizing: border-box</code> hace que el width y height incluyan el padding y border, facilitando el diseño.</p>
+                </div>
+
+                <h3>CSS con Selectores ID (#)</h3>
+<pre><code>&lt;style&gt;
+    #titulo1 {
+        background-color: green;
+        color: white;
+        padding: 20px;
+    }
+    
+    #texto1 {
+        border-left: 2px solid black;
+        font-size: small;
+    }
+&lt;/style&gt;
+
+&lt;div id="titulo1"&gt;Kids Club&lt;/div&gt;
+&lt;div id="texto1"&gt;Contenido...&lt;/div&gt;</code></pre>
+
+                <div class="tip-box">
+                    <p><strong>Diferencia entre Clases y IDs:</strong></p>
+                    <ul>
+                        <li><strong>Clases (.nombre)</strong> - Pueden usarse múltiples veces en la página</li>
+                        <li><strong>IDs (#nombre)</strong> - Solo se usan UNA vez por página, son únicos</li>
+                    </ul>
+                </div>
+
+                <h3>Margin Auto para Centrar</h3>
+<pre><code>#ayuda {
+    margin-left: auto;  /* Empuja el elemento a la derecha */
+}
+
+/* En un contenedor flex, esto alinea a la derecha */</code></pre>
+
+                <h3>Display Inline-Block</h3>
+<pre><code>display: inline-block;</code></pre>
+                <div class="example-box">
+                    <p><code>inline-block</code> permite que los elementos estén en línea pero puedan tener width, height y padding como elementos de bloque.</p>
+                </div>
+
+                <h3>Span con Color Diferente</h3>
+<pre><code>&lt;div&gt;
+    Kids Club&lt;span style="color: black"&gt;.com&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+                <p>El <code>&lt;span&gt;</code> se usa para aplicar estilos a una parte específica del texto dentro de un elemento.</p>
+            </div>
+            
+            <!-- CONSEJOS PARA EL EXAMEN -->
+            <div class="section" id="consejos">
+                <h2>📝 CONSEJOS PARA EL EXAMEN</h2>
+                
+                <h3>Estructura HTML</h3>
+                <div class="warning-box">
+                    <ul>
+                        <li>Siempre incluir <code>&lt;!DOCTYPE html&gt;</code></li>
+                        <li>No olvidar cerrar las etiquetas</li>
+                        <li>Usar sangría para mejor legibilidad</li>
+                        <li>Especificar <code>charset="UTF-8"</code> para caracteres especiales</li>
+                    </ul>
+                </div>
+                
+                <h3>Tablas</h3>
+                <div class="important-box">
+                    <ul>
+                        <li>Recordar que <code>colspan</code> fusiona <strong>columnas</strong></li>
+                        <li><code>rowspan</code> fusiona <strong>filas</strong></li>
+                        <li>Usar <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code> para mejor estructura</li>
+                        <li><code>&lt;th&gt;</code> para encabezados, <code>&lt;td&gt;</code> para datos</li>
+                    </ul>
+                </div>
+                
+                <h3>Imágenes</h3>
+                <div class="tip-box">
+                    <ul>
+                        <li>Siempre incluir <code>alt</code> para accesibilidad</li>
+                        <li>Especificar <code>width</code> y <code>height</code></li>
+                        <li>Usar rutas relativas correctamente</li>
+                    </ul>
+                </div>
+                
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><code>target="_blank"</code> para nueva pestaña</li>
+                    <li><code>target="nombreMarco"</code> para iframes</li>
+                    <li><code>href="mailto:email"</code> para emails</li>
+                </ul>
+                
+                <h3>CSS</h3>
+                <ul>
+                    <li>Los colores se pueden especificar con nombres, hexadecimal (#RRGGBB) o RGB</li>
+                    <li><code>margin</code> es espacio exterior, <code>padding</code> es espacio interior</li>
+                    <li><code>text-align: justify</code> justifica el texto a ambos lados</li>
+                </ul>
+                
+                <h3>Listas</h3>
+                <ul>
+                    <li><code>&lt;ol&gt;</code> para ordenadas (numeradas)</li>
+                    <li><code>&lt;ul&gt;</code> para no ordenadas (viñetas)</li>
+                    <li><code>&lt;dl&gt;</code> para definiciones</li>
+                    <li>Cambiar el tipo con el atributo <code>type</code></li>
+                </ul>
+            </div>
+            
+            <!-- ELEMENTOS MÁS IMPORTANTES -->
+            <div class="section">
+                <h2>✅ ELEMENTOS MÁS IMPORTANTES</h2>
+                
+                <div class="example-box">
+                    <ol style="line-height: 2;">
+                        <li><strong>Estructura básica HTML5</strong> - Siempre empezar bien</li>
+                        <li><strong>Tablas con colspan/rowspan</strong> - Muy común en exámenes</li>
+                        <li><strong>Tipos de listas</strong> - Saber cuándo usar cada una</li>
+                        <li><strong>Enlaces con target</strong> - Para iframes y nueva pestaña</li>
+                        <li><strong>CSS inline</strong> - Saber las propiedades básicas</li>
+                        <li><strong>Imágenes con atributos</strong> - src, alt, width, height</li>
+                        <li><strong>Divs para maquetación</strong> - Layout básico</li>
+                        <li><strong>Eventos JavaScript</strong> - onmouseover/onmouseout</li>
+                        <li><strong>Flexbox básico</strong> - display: flex, justify-content, align-items</li>
+                        <li><strong>Float</strong> - Para posicionar elementos left/right</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <!-- CHEATSHEET RÁPIDA -->
+            <div class="section">
+                <h2>⚡ CHEATSHEET RÁPIDA</h2>
+                
+                <table>
+                    <tr>
+                        <th>Concepto</th>
+                        <th>Código</th>
+                    </tr>
+                    <tr>
+                        <td>Estructura básica</td>
+                        <td><code>&lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;body&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>Fusionar columnas</td>
+                        <td><code>&lt;td colspan="3"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>Fusionar filas</td>
+                        <td><code>&lt;td rowspan="2"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>Imagen</td>
+                        <td><code>&lt;img src="ruta" alt="texto"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>Enlace nueva pestaña</td>
+                        <td><code>&lt;a href="url" target="_blank"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>Enlace a iframe</td>
+                        <td><code>&lt;a href="url" target="nombre"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>Lista ordenada</td>
+                        <td><code>&lt;ol&gt; &lt;li&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>Lista no ordenada</td>
+                        <td><code>&lt;ul&gt; &lt;li&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>Lista de definición</td>
+                        <td><code>&lt;dl&gt; &lt;dt&gt; &lt;dd&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>Flexbox</td>
+                        <td><code>display: flex;</code></td>
+                    </tr>
+                    <tr>
+                        <td>Float</td>
+                        <td><code>float: left; / float: right;</code></td>
+                    </tr>
+                    <tr>
+                        <td>Evento ratón</td>
+                        <td><code>onmouseover="código" onmouseout="código"</code></td>
+                    </tr>
+                </table>
+                <div>
+                <p class="cats-and-stars">This paragraph is full of cats (ESTE PARRÁFO ESTÁ CON EL ESTILO CATS AND STARS, SIRVE PARA PONER UNA FOTO DE FONDO Y EL TEXTO ENCIMA)<br />and stars.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <h2>¡Buena suerte en tu examen! 🍀</h2>
+            <p>Repasa cada sección y practica con ejemplos</p>
+            <p style="margin-top: 20px; font-size: 14px; opacity: 0.8;">
+                Guía creada para HTML y CSS Básico - 1º ASIR
+            </p>
+        </div>
+    </div>
+    
+    <a href="#" class="back-to-top">↑ Arriba</a>
+</body>
+</html>
