@@ -22,3 +22,14 @@ En PCs normales generalmente será con `arp -a`, depende del SO.
 Puesto que las solicitudes ARP van por Broadcast, las recibe toda la red; esto puede generar que un atacante suplante la identidad de otro dispositivo (Envenenamiento o Spoofing ARP).
 - *Nota (fuera de examen): Para hacer uno de estos ataques podemos usar herramientas como arpspoof*
 ---
+### Neighbor Discovery (ND)
+Es un protocolo de IPv6 equivalente a ARP(Ipv4), también incorpora funcionalidades de ICMP.
+Utiliza mensajes especiales de ICMPv6 con los que los host pueden aprender las IPv6 de los vecinos en capa de enlace.
+Nos permite:
+- Resolver Direcciones
+- Descubrir Router
+- Servicios de Redirección
+- La Solicitud (NS) y anuncio (NA) de Vecino  son de dispositivo a dispositivo.
+- Los mensajes Router Solicitation (RS) y Advertisement (RA) se utilizan para mensajeríá entre dispositivos y detección de routers
+
+Las solicitudes de vecino se envían a través de multidifusión
