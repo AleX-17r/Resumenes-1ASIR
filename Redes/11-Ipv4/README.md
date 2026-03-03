@@ -69,4 +69,12 @@ Esto nos sirve para resumir redes, tener más hosts dentro de la misma subred, y
 Si tenemos demasiados hosts dentro de la misma red, se saturará, sobretodo si los hosts empiezan a enviar Broadcasts como locos.
 
 ---
-pg 34
+### Subredes Estáticas (FLSM)
+Consiste en tomar una parte de host como parte de red, permitiendo tener un menor rango de hosts y más subredes.
+Cuando dividimos una red en 2 subredes, estas 2 serán iguales, de forma que podemos no aprovechar del todo la red.
+Por ejemplo, de una /24, podemos sacar dos /26.
+
+### Subredes Dinámicas (VLSM)
+a diferencia de las estáticas, nos permite sacar subredes de diferente máscara de una red de forma que si queremos sacar 3 subredes de la misma podemos por ejemplo sacar de la /24 una /25 y dos /26
+([más en detalle](https://github.com/AleX-17r/Resumenes-1ASIR/tree/main/Redes/6-Subnetting_VLSM) --copia a Obsidian para mejor legibilidad)
+
