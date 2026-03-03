@@ -1,7 +1,7 @@
 ### MAC/IP
 Los dispositivos de una red tienen 2 direcciones: 
 - **MAC**: dirección física de capa 2 (enlace), está en la tarjeta de red (NIC).
-- IP: dirección lógica de capa 3 (red).
+- **IP**: dirección lógica de capa 3 (red).
 Cuando el mensaje pasa a una red remota, su dirección MAC pasa a ser la de su puerta de enlace.
 (la interfaz del router por el que sale de la red que lleva al host).
 
@@ -30,6 +30,6 @@ Nos permite:
 - Descubrir Router
 - Servicios de Redirección
 - La Solicitud (NS) y anuncio (NA) de Vecino  son de dispositivo a dispositivo.
-- Los mensajes Router Solicitation (RS) y Advertisement (RA) se utilizan para mensajeríá entre dispositivos y detección de routers
+- Los mensajes Router Solicitation (RS) y Advertisement (RA) se utilizan para mensajería entre dispositivos y detección de routers
 
 Las solicitudes de vecino se envían a través de multidifusión
