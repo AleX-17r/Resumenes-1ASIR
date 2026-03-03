@@ -30,3 +30,19 @@ Copiar config a la nvram:
 `Router (config-if) # ipv6 address FE80: :1/64`
 **Levantar interfaz**:
 `Router (config-if) # no shutdown`
+
+Podemos ver **todas las interfaces** con:
+- IPv4: `show interface brief`
+- IPv6: `show ipv6 interface brief`
+Si queremos ver **estadísticas de interfaces**, usaremos:
+- todo: `show interfaces`
+- IPv4: `show ip interface`
+- IPv6: `show ipv6 interface`
+Para ver el contenido de las **tablas de enrutamiento**, podemos usar:
+- IPv4: `show ip route`
+- IPv6: `show ipv6 route`
+Para configurar un **Gateway**, usaremos:
+- ip default-gateway 192.168.1.254
+
+
+---
