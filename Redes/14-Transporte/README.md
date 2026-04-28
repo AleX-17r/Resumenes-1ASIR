@@ -16,14 +16,7 @@ Puede:
 - Ordenar los datos
 - Enviar datos a velocidad eficiente
 
----
-### UDP
-Nos permite enviar los datos muy rápido
-- No es orientado a conexión
-- No comprueba si los datos llegan
-
----
-### Funcionamiento TCP
+### Funcionamiento 
 - Establece una sesión entre los dispositivos
 - Garantiza que los datos llegan
 - Proporciona la entrega en orden
@@ -55,3 +48,14 @@ Como no todos los segmentos llegan a la vez, TCP emite un orden de secuncia en e
 Al transmitir la información, se crea una copia de cada segmento que se pone en una cola, cuando llega el ACK (con número de secuencia de su segmento) de que ha llegado lo borra, para así si no recibe el ACK poder retransmitir esos datos.
 
 ---
+### Control de Flujo
+ajusta la velocidad de transmision y el tamaño del MSS y MTU
+
+---
+### UDP
+Nos permite enviar los datos muy rápido
+- No es orientado a conexión
+- No comprueba si los datos llegan
+
+No controla la transmisión, con lo que lo envía a sesión o a aplicación en el orden que le llega. 
+
